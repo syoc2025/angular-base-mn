@@ -5,5 +5,9 @@ import { Component, NgModule } from '@angular/core';
   templateUrl: './libros.component.html',
 })
 export class LibrosComponent {
-  libros = ['El Quijote', 'La Odisea', 'La Camara de Pandora'];
+  libros = ['El Quijote', 'La Odisea', 'La Caja de Pandora'];
+
+  eliminarLibro(libro) {
+    this.libros = this.libros.filter((p) => p !== libro);
+  }
 }
