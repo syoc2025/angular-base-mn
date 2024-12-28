@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UsuarioComponent } from './usuario.component';
 import { LibrosComponent } from './libros/libros.component';
 import { LibroComponent } from './libro/libro.component';
+import { LibrosService } from './services/libros.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { LibroComponent } from './libro/libro.component';
   ],
   imports: [BrowserModule, FormsModule],
 
-  providers: [],
+  providers: [LibrosService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
